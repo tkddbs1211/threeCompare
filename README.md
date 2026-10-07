@@ -1,8 +1,8 @@
 # 과제: 배열, 이진 탐색 트리(BST), AVL 트리의 성능 비교 분석 보고서
 
 ## 1. 실행 결과 데이터 요약
-<img width="639" height="985" alt="트리비교1" src="https://github.com/user-attachments/assets/8a07f313-8b19-47e7-83ef-77690eadfaa6" />
-<img width="650" height="884" alt="트리비교4" src="https://github.com/user-attachments/assets/58d059ff-8e62-4788-ad3a-14c51e4cb8bd" />
+<img width="500" height="400" alt="트리비교1" src="https://github.com/user-attachments/assets/8a07f313-8b19-47e7-83ef-77690eadfaa6" /> <img width="500" height="400" alt="트리비교4" src="https://github.com/user-attachments/assets/58d059ff-8e62-4788-ad3a-14c51e4cb8bd" />
+
 
 제공된 프로그램의 실행 결과 콘솔 출력 화면에서 추출한 실제 통계 수치입니다.
 
@@ -41,4 +41,4 @@
 ### 3) 탐색 성능 (Search Comparisons) 분석
 * **순차 탐색 (평균 92.40회)**: 배열을 처음부터 끝까지 검색하므로 데이터가 존재하지 않을 때(`Not Found`) 무조건 전체 데이터 크기(94회)만큼의 비교가 발생하여 효율성이 가장 떨어집니다 ($O(N)$).
 * **BST 탐색 (평균 8.12회)**: $O(\log N)$에 가까운 빠른 성능을 보여주지만, 트리의 높이가 높아서 특정 키(예: Search Key 567) 탐색 시 최대 13회의 비교가 필요했습니다.
-* **AVL 트리 탐색 (평균 6.72회)**: 엄격하게 균형을 유지한 덕분에 탐색 시 경로가 짧아져 평균 비교 횟수가 세 자료구조 중 가장 적었으며, 어떤 키를 찾더라도 안정적으로 가장 뛰어난 탐색 성능을 보였습니다 ($O(\log N)$ 보장).<img width="650" height="884" alt="트리비교4" src="https://github.com/user-attachments/assets/e35ec41c-1cf1-454e-9a6e-1227c9e6f6fd" />
+* **AVL 트리 탐색 (평균 6.72회)**: 엄격하게 균형을 유지한 덕분에 탐색 시 경로가 짧아져 평균 비교 횟수가 세 자료구조 중 가장 적었으며, 어떤 키를 찾더라도 안정적으로 가장 뛰어난 탐색 성능을 보였습니다 ($O(\log N)$ 보장).
